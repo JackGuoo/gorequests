@@ -221,7 +221,7 @@ func (req *Request) ClientSetCookies() {
 
 // set timeout s = second
 func (req *Request) SetTimeout(n time.Duration) {
-	req.Client.Timeout = time.Duration(n * time.Second)
+	req.Client.Timeout = n
 }
 
 func (req *Request) Proxy(proxyurl string) {
